@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+   <!-- encabezado de cuerpo de la pagina-->
+<header>
+  <h1 class="title">Sistema de Inventario Bodega Activos Informaticos</h1>
+  <h2 class="title">ATI Soporte Técnico</h2>
+</header>
+
+<!-- menu -->
+<nav class="nav-menu">
+  <ul class="nav-list">
+    <li class="menu-item"><a href="ingreso.html">Ingreso</a></li>
+    <li class="menu-item"><a href="salida.html">Salida</a></li>
+    <li class="menu-item"><a href="historial.html">Historial</a></li>
+  </ul>
+</nav>
+  </header>
+   <!-- Ingreso -->
+    <form action="">
+        <h3 class="form-title">Registro de Ingreso</h3>
+        <form onsubmit="registrarMovimiento(event,'Ingreso')">
+          <div class="form-group">
+            <label for="num_oficio">Número de Oficio:</label>
+            <input type="text" id="num_oficio" required />
+          </div>
+          <div class="form-group">
+            <label for="Descripción">Descripción:</label>
+            <input type="text" id="Descripción" required placeholder="Ej: Laptop, Monitor, Impresora"/>
+          </div>
+          <div class="form-group">
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" required />
+          </div>
+          <div class="form-group">
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="modelo" required />
+           </div>
+          <div class="form-group">
+            <label for="serie">Serie:</label>
+            <input type="text" id="serie" required />
+           </div>
+          <div class="form-group">
+            <label for="patrimonio">Patrimonio:</label>
+            <input type="text" id="patrimonio" required />
+           </div>
+          <div class="form-group">
+            <label for="licencia">Licencia *Si se requiere:</label>
+            <input type="text" id="licencia" placeholder="Ej: Windows, Office "/>
+           </div>
+          <div class="form-group">
+            <label for="ubicacion">Ubicacion en bodega:</label>
+            <input type="text" id="ubicacion" required />
+             </div>
+          <div class="form-group">
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" required placeholder="Ej: Bueno, Regular, Obsoleto" />
+           </div>
+          <div class="form-group">
+            <label for="fecha_ingreso">Fecha de ingreso:</label>
+            <input type="text" id="fecha_ingreso" required />  
+           </div>
+          <div class="form-group">
+            <label for="tecnico">Tecnico que registra el ingreso:</label>
+            <input type="text" id="tecnico" required  placeholder="Encargado de bodega"/>        
+           </div>
+          <div class="form-group">
+            <label for="tecnico_entrega">Tecnico que entrega el activo:</label>
+            <input type="text" id="tecnico_entrega" required />
+            </div>
+          <div class="form-group">
+            <label for="observaciones_ingreso">Observaciones:</label>
+            <textarea id="observaciones_ingreso"></textarea>
+          </div>
+          <button type="submit">Registrar Ingreso</button>
+        </form>
+      </div>
+    
+</body>
+</html>

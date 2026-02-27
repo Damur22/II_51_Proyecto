@@ -1,0 +1,163 @@
+/* ESTILOS GENERALES */
+body {
+  font-family: "Segoe UI", sans-serif; /* Fuente principal del texto */
+  background-color: #e2d7dd; /* Color de fondo para toda la página */
+  margin: 20px; /* Margen alrededor del contenido */
+}
+
+/* ENCABEZADO */
+.title {
+  text-align: center; /* Centrar el texto del título */
+  margin: 0; /* Eliminar margen por defecto */  
+  padding: 10px; /* Espaciado */
+}
+
+h1.title {
+  font-size: 28px; /* Tamaño para el título principal */
+  color: #fff; /* Color del texto del título */
+  background-color: #333; /* Fondo para el título */
+  border-radius: 5px; /* Bordes redondeados para el título */
+}
+
+h2.title {
+  font-size: 20px; /* Tamaño para segundo titulo */
+  color: #ccc; /* Color del texto del segundo título */
+  background-color: #333; /* Fondo para el segundo título */
+  border-radius: 5px; /* Bordes redondeados para el segundo título */
+  margin-top: 5px; /* Separación entre el título principal y el segundo título */
+}
+
+/* MENÚ DE NAVEGACIÓN */
+.nav-menu {
+  background-color: #17a2b8; /* Color de fondo del menú de navegación */
+  margin-top: 10px; /* Separación entre el menú y el título */
+  border-radius: 6px; /* Bordes redondeados para el menú */
+  max-width: 750px; /* Ancho máximo del menú */
+  margin-left: auto; /* Centrar el menú horizontalmente */
+  margin-right: auto; /* Centrar el menú horizontalmente */
+}
+
+.nav-list {
+  list-style: none; /* Eliminar viñetas de la lista */
+  margin: 0px; /* Eliminar margen por defecto */
+  padding: 0; /* Eliminar padding por defecto */
+  display: flex; /* Usar flexbox para organizar los elementos del menú */
+  justify-content: center; /* Centrar los elementos del menú horizontalmente */
+}
+
+.menu-item {
+  margin: 0 40px; /* ajustado para no separar demasiado */
+}
+
+.menu-item a {
+  color: #fff; /* Color del texto de los enlaces del menú */
+  text-decoration: none; /* Eliminar subrayado de los enlaces */
+  font-weight: bold; /* Hacer el texto de los enlaces del menú en negrita */
+  padding: 10px 15px; /* Espaciado interno para los enlaces del menú */
+  display: block; /* Hacer que los enlaces del menú ocupen todo el espacio disponible */
+}
+
+.menu-item a:hover {
+  background-color: #0d3a41; /* Color de fondo al pasar el mouse sobre los enlaces del menú */
+  border-radius: 10px; /* Bordes redondeados al pasar el mouse sobre los enlaces del menú */
+}
+
+/* FORMULARIOS */
+form {
+  background-color: #fff; /* Fondo blanco para los formularios */
+  padding: 20px; /* Espaciado interno para los formularios */
+  margin: 20px auto; /* Centrar el formulario horizontalmente y agregar margen vertical */
+  max-width: 700px; /* Ancho máximo para los formularios */
+  border: 1px solid #ddd; /* Borde ligero para los formularios */
+  border-radius: 8px; /* Bordes redondeados para los formularios */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra ligera para dar profundidad a los formularios */
+}
+
+.form-title {
+  margin-top: 0; /* Eliminar margen superior para el título del formulario */
+  color: #1a8494; /* Color del texto para el título del formulario */
+  text-align: center; /* Centrar el texto del título del formulario */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Espaciado entre grupos de formulario */
+  text-align: left; /* Alinear el texto a la izquierda para los grupos de formulario */
+}
+
+.form-group label {
+  display: block; /* Hacer que las etiquetas ocupen toda la línea */
+  margin-bottom: 5px; /* Espaciado entre la etiqueta y el campo de entrada */
+  font-weight: bold; /* Hacer que el texto de las etiquetas sea en negrita */
+  color: #333; /* Color del texto para las etiquetas de los formularios */
+}
+
+input,
+textarea {
+  width: 95%; /* Hacer que los campos de entrada y textarea ocupen el 95% del ancho del formulario */
+  padding: 10px; /* Espaciado interno para los campos de entrada y textarea */
+  border: 1px solid #ccc; /* Borde ligero para los campos de entrada y textarea */
+  border-radius: 4px; /* Bordes redondeados para los campos de entrada y textarea */
+  box-sizing: border-box; /* Asegurar que el padding no afecte al ancho total de los campos de entrada y textarea */
+}
+
+textarea {
+  resize: vertical; /* Permitir que el textarea se redimensione verticalmente */
+  min-height: 80px; /* Altura mínima para el textarea */
+}
+
+button {
+  background: #17a2b8; /* Color de fondo para los botones */
+  color: #fff; /* Color del texto para los botones */
+  padding: 12px; /* Espaciado interno para los botones */
+  border: none; /* Eliminar borde para los botones */
+  border-radius: 5px; /* Bordes redondeados para los botones */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre los botones */
+  width: 100%; /* Hacer que los botones ocupen todo el ancho del formulario */
+  font-size: 14px; /* Tamaño de fuente para los botones */
+}
+
+button:hover {
+  background: #138496; /* Color de fondo al pasar el mouse sobre los botones */
+}
+
+/* BLOQUE DETALLES ACTIVO */
+.activo-detalles {
+  border: 2px solid #17a2b8;    /* Borde azul institucional */
+  border-radius: 8px;           /* Esquinas redondeadas */
+  background-color: #f9f9f9;    /* Fondo claro */
+  padding: 15px;                /*  Espaciado interno */
+  margin-top: 12px;             /* Separación respecto al resto del formulario */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Sombra ligera para resaltar */
+}
+
+/* TABLA HISTORIAL */
+table {
+  border-collapse: collapse; /* Colapsar bordes para una apariencia más limpia */
+  width: 100%; /* Hacer que la tabla ocupe el 95% del ancho del formulario */
+  margin-top: 10px; /* Separación entre la tabla y el resto del formulario */
+}
+
+th,
+td {
+  border: 1px solid #ccc; /* Borde ligero para las celdas de la tabla */
+  padding: 10px; /* Espaciado interno para las celdas de la tabla */
+  text-align: center;
+}
+
+th {
+  background: #17a2b8; /* Color de fondo para los encabezados de la tabla */
+  color: #fff; /* Color del texto para los encabezados de la tabla */
+}
+
+tr:nth-child(even) {
+  background: #f9f9f9; /* Color de fondo para filas pares de la tabla */
+}
+
+/* CAMPO DE BÚSQUEDA */
+#buscar {
+  margin-top: 10px; /* Separación entre el campo de búsqueda y el resto del formulario */
+  padding: 10px; /* Espaciado interno para el campo de búsqueda */
+  width: 91%; /* Hacer que el campo de búsqueda ocupe el 91% del ancho del formulario */
+  border: 1px solid #ccc; /* Borde ligero para el campo de búsqueda */
+  border-radius: 4px; /* Bordes redondeados para el campo de búsqueda */
+}
