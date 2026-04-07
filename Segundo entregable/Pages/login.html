@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- logos -->
+    <div class="header-logos">
+      <img src="logo/logo1.png" alt="Logo ATI" class="logo" />
+      <img src="logo/logo3.png" alt="Logo UCR" class="logo" />
+    </div>
+
+    <!-- login -->
+    <section class="card">
+      <form id="loginForm" class="login-form">
+        <h3 class="login-title">Iniciar Sesión</h3>
+
+        <div class="login-group">
+          <label for="usuario">Usuario</label>
+          <input type="text" id="usuario" name="usuario" required />
+        </div>
+
+        <div class="login-group">
+          <label for="contraseña">Contraseña</label>
+          <input type="password" id="contraseña" name="contraseña" required />
+        </div>
+
+        <button type="submit" class="login-button">Iniciar Sesión</button>
+      </form>
+    </section>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./app.js" type="module"></script>
+
+  <script>
+    // credenciales únicas
+    const USER = "SoporteBodega";
+    const PASS = "Bodega2026";
+
+    document.getElementById("loginForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const usuario = document.getElementById("usuario").value.trim();
+      const contraseña = document.getElementById("contraseña").value.trim();
+
+      if (usuario === USER && contraseña === PASS) {
+        Swal.fire({
+          icon: "success",
+          title: "Acceso concedido",
+          text: "Bienvenido al sistema"
+        }).then(() => {
+          window.location.href = "index.html";
+        });
+      } else {
+        Swal.fire({
+          icon: "error",
+          title: "Acceso denegado",
+          text: "Usuario o contraseña incorrectos"
+        });
+      }
+    });
+  </script>
+</body>
+</html>

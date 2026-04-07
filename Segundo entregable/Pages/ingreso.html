@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ingreso</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- encabezado -->
+    <header>
+      <div class="header-logos">
+        <img src="logo/logo1.png" alt="Logo ATI" class="logo" />
+        <img src="logo/logo3.png" alt="Logo UCR" class="logo" />
+      </div>
+      <h1 class="title">Sistema de Inventario Bodega Activos Informáticos</h1>
+      <h2 class="title">ATI Soporte Técnico</h2>
+    </header>
+
+    <!-- menú -->
+    <nav class="nav-menu">
+      <ul class="nav-list">
+        <li class="menu-item"><a href="ingreso.html">Ingreso</a></li>
+        <li class="menu-item"><a href="salida.html">Salida</a></li>
+        <li class="menu-item"><a href="historial.html">Historial</a></li>
+        <li class="menu-item"><a href="login.html">Salir</a></li>
+      </ul>
+    </nav>
+
+    <!-- Contenedor -->
+    <main>
+      <section class="card">
+        <h3 class="form-title">Registro de Ingreso</h3>
+
+        <!-- Formulario -->
+        <form id="formIngreso">
+          <input type="hidden" id="txtId" />
+
+          <div class="form-group">
+            <label for="Num_Oficio">Número de Oficio:</label>
+            <input type="text" id="Num_Oficio" required />
+          </div>
+
+          <div class="form-group">
+            <label for="Descripcion">Descripción:</label>
+            <input type="text" id="Descripcion" required placeholder="Ej: Laptop, Monitor, Impresora" />
+          </div>
+
+          <div class="form-group">
+            <label for="Marca">Marca:</label>
+            <input type="text" id="Marca" required />
+          </div>
+
+          <div class="form-group">
+            <label for="Modelo">Modelo:</label>
+            <input type="text" id="Modelo" required />
+          </div>
+
+          <div class="form-group">
+            <label for="Serie">Serie:</label>
+            <input type="text" id="Serie" required />
+          </div>
+
+          <div class="form-group">
+            <label for="Patrimonio">Patrimonio:</label>
+            <input type="text" id="Patrimonio" required />
+          </div>
+
+          <div class="form-group">
+            <label for="Licencia">Licencia (si aplica):</label>
+            <input type="text" id="Licencia" placeholder="Ej: Windows, Office" />
+          </div>
+
+          <div class="form-group">
+            <label for="Ubicacion">Ubicación en bodega:</label>
+            <input type="text" id="Ubicacion" required />
+          </div>
+
+          <div class="form-group">
+            <label for="Estado">Estado:</label>
+            <select id="Estado" required>
+              <option value="">Seleccione un estado</option>
+              <option value="Bueno">Bueno</option>
+              <option value="Regular">Regular</option>
+              <option value="Obsoleto">Obsoleto</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="Fecha_Ingreso">Fecha de ingreso:</label>
+            <input type="date" id="Fecha_Ingreso" required />
+          </div>
+
+          <div class="form-group">
+            <label for="Tecnico_Registra">Técnico que registra el ingreso:</label>
+            <select id="Tecnico_Registra" required>
+              <option value="">Seleccione un técnico</option>
+              <option value="Cesar Sifoentes">Cesar Sifoentes</option>
+              <option value="Alberto Meneses">Alberto Meneses</option>
+              <option value="Daniel Ruiz">Daniel Ruiz</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="Tecnico_Entrega">Técnico que entrega el activo:</label>
+            <select id="Tecnico_Entrega" required>
+              <option value="">Seleccione un técnico</option>
+              <option value="Diego Cubillo">Diego Cubillo</option>
+              <option value="Allan Rodriguez">Allan Rodriguez</option>
+              <option value="Juan Carlos Lara">Juan Carlos Lara</option>
+              <option value="Allan Arguedas">Allan Arguedas</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="Observaciones_Ingreso">Observaciones:</label>
+            <textarea id="Observaciones_Ingreso"></textarea>
+          </div>
+
+          <div class="button-form">
+            <button id="btnIngreso" type="submit">Registrar Ingreso</button>
+            <button id="btnCancelarIngreso" type="button">Cancelar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./app.js" type="module"></script>
+</body>
+</html>
