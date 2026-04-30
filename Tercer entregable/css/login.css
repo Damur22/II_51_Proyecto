@@ -1,0 +1,55 @@
+/* LOGIN ESPECÍFICO */
+body.login {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;   /* centra verticalmente */
+}
+
+/* caja del formulario */
+.login-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  width: 300px;
+  text-align: center; /* centra texto dentro */
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #1a8494;
+}
+
+.login-container label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.login-container input {
+  width: 80%;
+  margin: 5px auto;
+  display: block;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-container button {
+  margin-top: 15px;
+  width: 80%;
+  padding: 10px;
+  background: #17a2b8; /* color distinto para login */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background: #138496;
+}

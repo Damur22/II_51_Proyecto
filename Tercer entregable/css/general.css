@@ -1,0 +1,27 @@
+/* ESTILOS GENERALES */
+* { box-sizing: border-box; }
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #e2d7dd;
+  margin: 0;
+  padding: 30px;
+  color: #333;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* LOGO */
+.logo { width: 80px; height: auto; }
+
+/* Responsive básico */
+@media (max-width: 700px) {
+  .menu-item { margin: 0 8px; }
+  .button-form { flex-direction: column; }
+  .button-form button { width: 100%; }
+  .controls-row { flex-direction: column; align-items: stretch; }
+}

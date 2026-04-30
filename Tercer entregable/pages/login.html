@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="encabezado.css">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body class="login">
+  <!-- logos -->
+  <div class="header-logos">
+    <img src="logo/logo1.png" alt="Logo ATI" class="logo" />
+    <img src="logo/logo3.png" alt="Logo UCR" class="logo" />
+  </div>
+
+  <!-- login -->
+  <div class="login-container">
+    <h2>Iniciar Sesión</h2>
+    <form id="loginForm">
+      <label for="usuario">Cédula</label>
+      <input type="text" id="usuario" name="usuario" required />
+
+      <label for="contraseña">Contraseña</label>
+      <input type="password" id="contraseña" name="contraseña" required />
+
+      <button type="submit">Iniciar Sesión</button>
+    </form>
+
+    <p class="register-link">
+      ¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a>
+    </p>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./auth.js" type="module"></script>
+</body>
+</html>

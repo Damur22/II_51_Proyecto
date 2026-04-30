@@ -1,0 +1,66 @@
+/* TABLA HISTORIAL */
+.table-card { padding-top: 12px; }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+  table-layout: auto;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: #17a2b8;
+  color: #fff;
+}
+
+tr:nth-child(even) { background: #f9f9f9; }
+
+/* CONTROLES DE BÚSQUEDA Y BOTONES */
+.controls-row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 12px 0;
+  flex-wrap: wrap;
+}
+
+.controls-row .form-group {
+  flex: 1 1 320px;
+  margin-bottom: 0;
+}
+
+.button-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.button-group button { padding: 10px 14px; }
+
+/* Campo de búsqueda específico */
+#txtSearch {
+  margin-top: 0;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Detalles en la tabla de historial */
+.detalle-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.detalle-buttons button {
+  padding: 4px 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historial</title>
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="encabezado.css">
+  <link rel="stylesheet" href="navegacion.css">
+  <link rel="stylesheet" href="formularios.css">
+  <link rel="stylesheet" href="tabla.css">
+  <link rel="stylesheet" href="detalle.css">
+  <link rel="stylesheet" href="botones.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- encabezado de la página -->
+    <header>
+      <div class="header-logos">
+        <img src="logo/logo1.png" alt="Logo ATI" class="logo">
+        <img src="logo/logo3.png" alt="Logo UCR" class="logo">
+      </div>
+      <h1 class="title">Sistema de Inventario Bodega Activos Informáticos</h1>
+      <h2 class="title">ATI Soporte Técnico</h2>
+    </header>
+
+    <!-- menú -->
+    <nav class="nav-menu">
+      <ul class="nav-list">
+        <li class="menu-item"><a href="ingreso.html">Ingreso</a></li>
+        <li class="menu-item"><a href="salida.html">Salida</a></li>
+        <li class="menu-item"><a href="historial.html">Historial</a></li>
+        <li class="menu-item"><a href="registro.html">Registrar Usuario</a></li>
+        <li class="menu-item"><a href="login.html">Salir</a></li>
+      </ul>
+    </nav>
+
+    <!-- Contenedor -->
+    <main>
+      <section class="card">
+        <h3 class="form-title">Historial de Movimientos</h3>
+
+        <!-- Controles de búsqueda y botones -->
+        <div class="controls-row">
+          <div class="form-group">
+            <label for="txtSearch">Buscar:</label>
+            <input type="text" id="txtSearch" placeholder="Escriba para buscar..." />
+          </div>
+
+          <div class="button-group">
+            <button id="btnLoad" type="button">Cargar</button>
+            <button id="btnClear" type="button">Limpiar</button>
+          </div>
+        </div>
+
+        <!-- Tabla -->
+        <div class="table-card">
+          <table id="tablaHistorial" aria-describedby="Historial de movimientos">
+            <thead>
+              <tr>
+                <th>N°</th>
+                <th>Activo</th>
+                <th>Patrimonio</th>
+                <th>Movimiento</th>
+                <th>Fecha</th>
+                <th>Detalle</th>
+              </tr>
+            </thead>
+            <tbody id="tbodyHistorial"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+  <script src="./index.js" type="module"></script>
+</body>
+</html>

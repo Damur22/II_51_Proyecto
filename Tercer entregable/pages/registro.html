@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="encabezado.css">
+    <link rel="stylesheet" href="registro.css">
+</head>
+<body class="registro">
+    <div class="registro-container">
+
+        <!-- encabezado -->
+        <div class = "header-logos">
+            <img src="logo/logo1.png" alt="Logo ATI" class="logo" />
+            <img src="logo/logo3.png" alt="Logo UCR" class="logo" />
+        </div>
+
+        <section class="card">
+            <form id="registroForm" class="login-form">
+                <h3 class="login-title">Registrar Usuario</h3>
+                <div class="login-group">
+                    <label for="cedula">Cédula</label>
+                    <input type="text" id="cedula" name="cedula" required />
+                </div>
+                <div class="login-group">
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" id="contraseña" name="contraseña" required />
+                </div>
+                <button type="submit" class="login-button">Registrar</button>
+            </form>
+        </section>
+    </div>      
+     <!-- Scripts -->
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./auth.js" type="module"></script>
+</body>
+</html>

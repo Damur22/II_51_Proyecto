@@ -1,0 +1,55 @@
+/* TARJETA REUTILIZABLE PARA FORMULARIOS Y HISTORIAL */
+.card, .form-card {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* CONTROLES Y FORMULARIOS */
+.form-title {
+  margin-top: 0;
+  color: #1a8494;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid rgba(23,162,184,0.25);
+  border-color: #17a2b8;
+}
+
+textarea { resize: vertical; min-height: 80px; }

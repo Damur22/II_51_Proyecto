@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Salida</title>
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="encabezado.css">
+  <link rel="stylesheet" href="navegacion.css">
+  <link rel="stylesheet" href="formularios.css">
+  <link rel="stylesheet" href="tabla.css">
+  <link rel="stylesheet" href="detalle.css">
+  <link rel="stylesheet" href="botones.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- encabezado -->
+    <header>
+      <div class="header-logos">
+        <img src="logo/logo1.png" alt="Logo ATI" class="logo" />
+        <img src="logo/logo3.png" alt="Logo UCR" class="logo" />
+      </div>
+      <h1 class="title">Sistema de Inventario Bodega Activos Informáticos</h1>
+      <h2 class="title">ATI Soporte Técnico</h2>
+    </header>
+
+    <!-- menú -->
+    <nav class="nav-menu">
+      <ul class="nav-list">
+        <li class="menu-item"><a href="ingreso.html">Ingreso</a></li>
+        <li class="menu-item"><a href="salida.html">Salida</a></li>
+        <li class="menu-item"><a href="historial.html">Historial</a></li>
+        <li class="menu-item"><a href="registro.html">Registrar Usuario</a></li>
+        <li class="menu-item"><a href="login.html">Salir</a></li>
+      </ul>
+      
+    </nav>
+
+    <!-- Contenedor -->
+    <main>
+      <section class="card">
+        <h3 id="tituloForm" class="form-title">Registro de Salida</h3>
+        
+        <!-- Formulario -->
+        <form id="formSalida">
+          <input type="hidden" id="txtId" />
+
+          <div class="form-group">
+            <label for="Caso">Caso Asignado:</label>
+            <input type="text" id="Caso" required />
+          </div>
+
+          <div class="form-group">
+            <label for="Tecnico_Solicita">Técnico que solicitó activo:</label>
+            <select id="Tecnico_Solicita" required>
+              <option value="">Seleccione un técnico</option>
+              <option value="Diego Cubillo">Diego Cubillo</option>
+              <option value="Allan Rodriguez">Allan Rodriguez</option>
+              <option value="Juan Carlos Lara">Juan Carlos Lara</option>
+              <option value="Allan Arguedas">Allan Arguedas</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="Tecnico_Salida">Técnico que entrega el activo:</label>
+            <select id="Tecnico_Salida" required>
+              <option value="">Seleccione un técnico</option>
+              <option value="Cesar Sifoentes">Cesar Sifoentes</option>
+              <option value="Alberto Meneses">Alberto Meneses</option>
+              <option value="Daniel Ruiz">Daniel Ruiz</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="Patrimonio_Salida">Patrimonio:</label>
+            <input type="text" id="Patrimonio_Salida" required />
+          </div>
+
+          <div class="activo-detalles">
+            <h4 class="form-title">Detalles del Activo Confirmación</h4>
+
+            <div class="form-group">
+              <label for="Descripcion_Activo">Descripción:</label>
+              <input type="text" id="Descripcion_Activo" required />
+            </div>
+
+            <div class="form-group">
+              <label for="Marca_Activo">Marca:</label>
+              <input type="text" id="Marca_Activo" required />
+            </div>
+
+            <div class="form-group">
+              <label for="Modelo_Activo">Modelo:</label>
+              <input type="text" id="Modelo_Activo" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="Fecha_Salida">Fecha de salida:</label>
+            <input type="date" id="Fecha_Salida" required />
+          </div>
+
+          <div class="form-group">
+            <label for="Condicion_Activo">Condición al entregar:</label>
+            <select id="Condicion_Activo" required>
+              <option value="">Seleccione un estado</option>
+              <option value="Bueno">Bueno</option>
+              <option value="Regular">Regular</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="Observaciones_Salida">Observaciones:</label>
+            <textarea id="Observaciones_Salida"></textarea>
+          </div>
+
+          <div class="button-form">
+            <button id="btnSalida" type="submit">Registrar Salida</button>
+            <button id="btnCancelarSalida" type="button">Cancelar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./app.js" type="module"></script>
+</body>
+</html>
